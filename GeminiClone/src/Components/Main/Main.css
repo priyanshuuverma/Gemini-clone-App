@@ -1,0 +1,251 @@
+ .Main{
+    flex:1;
+    min-height: 79vh;
+    padding-bottom: 15vh;
+    padding-left: 140px;
+    margin-left: 200px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Main::-webkit-scrollbar{
+    display: none;
+}
+
+.Main .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 400;
+    color: #585858;
+     
+  
+}
+
+.Main .nav p{
+  margin-left: -125px;
+  margin-top: -10px;
+}
+.Main .nav img{
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+   
+
+}
+.main-container{
+    max-width: 900px;
+    margin: auto
+}
+.Main .greet{   line-height: 0.5;
+    margin: 0px;
+    font-size: 55px;
+    color: #c4c7c5;
+    font-weight: 625;
+    padding: -40px;
+    line-height:1.1;
+}
+
+.main-container .greet span{
+    background: -webkit-linear-gradient(15deg, #4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.main-container .cards{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap:10px;
+    padding-top: 20px;
+  
+}
+
+
+.Main .card{
+   
+    height: 170px;
+    width: 170px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.Main .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.Main .card p {
+    color: #585858;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.Main .card:hover{
+    background-color: #dfe4ea;
+}
+
+.main-bottom{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 0px;
+    margin: auto;}
+  
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #eceff1;
+    padding: 16px 20px;
+    border-radius: 50px;
+    padding-left:0 px;
+    width: 800px;
+}
+
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+.search-box input{
+    float: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding:7px;
+    padding-left: 20px;
+    font-size:15px ;
+    width: 1000px;
+
+}
+
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.Main .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;gap: 20px;
+}
+.result-title p {
+    font-weight: 400;
+}
+
+.result img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loader{
+    width: 100%;
+  
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+.loader hr {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff, #ffffff , #9ed7ff );
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+
+    100%{
+        background-position: 800px 0px;
+    }
+    
+}
+
+.result-data p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 412px) {
+   .Main{
+    min-height: 910px;
+    background-color: black;
+    color: white;
+    min-width:  410px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    box-sizing: border-box;
+   }
+   .Main .nav{
+       padding: 10px;
+       align-self: center;
+       color: rgb(255, 255, 255);
+       padding-left:150px;
+       padding-top: 50px;
+       font-weight: 500;
+   }
+   .main-container .cards{
+    display:grid;
+    gap: 5px;
+    padding: 21px;
+   
+   }
+   .Main .card{
+    width: 120px;
+    height: 100px;
+   }
+   .Main .card img{
+    width: 20px;
+    height: 20px;
+   }
+   .search-box{
+    width: 350px;
+   
+   }
+   .bottom-info{
+    background-color: black;
+   }
+   
+}
