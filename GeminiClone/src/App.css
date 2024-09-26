@@ -11,3 +11,54 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 360px) {
+  /* Styles for mobile devices */
+  body {
+    font-size: 16px;
+  }
+  .container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+}
+
+/* Tablet (Portrait) */
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+  /* Styles for tablet devices in portrait mode */
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+  }
+}
+
+/* Desktop (Small) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small desktop devices */
+  body {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 60px;
+  }
+}
+
+/* Desktop (Large) */
+@media only screen and (min-width: 1025px) {
+  /* Styles for large desktop devices */
+  body {
+    font-size: 22px;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 80px;
+  }
+}
